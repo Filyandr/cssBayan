@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.label_check {
+    cursor: pointer;
+}
+
+.accordion-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0.8em;
+}
+
+.accordion__item-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8em 0.8em 0 0.8em;
+    border-top: 1px solid #0e0e0e;
+}
