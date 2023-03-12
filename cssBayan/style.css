@@ -5,6 +5,11 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.accordion {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 input[type="radio"] {
     display: none;
 }
@@ -20,10 +25,22 @@ input[type="radio"] {
     margin: 0 0.8em;
 }
 
+.accordion__item-title {
+    font-weight: bold;
+    color: blue;
+    padding-left: 0.5em;
+}
+
 .accordion__item-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0.8em 0.8em 0 0.8em;
     border-top: 1px solid #0e0e0e;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 0.8em;
 }
