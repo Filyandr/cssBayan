@@ -31,11 +31,15 @@ input[type="radio"] {
     padding-left: 0.5em;
 }
 
+.accordion__item-radio:checked + .label_check .accordion__item-title {
+    color: black;
+}
+
 .accordion__item-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.8em 0.8em 0 0.8em;
+    margin: 0.3em 0.3em 0 0.3em;
     border-top: 1px solid #0e0e0e;
 }
 
@@ -72,10 +76,46 @@ input[type="radio"] {
     transition: all 0.7s ease 0s;
 }
 
+.accordion__item-radio:checked ~ .label_check .image-box > img {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
 @media (any-hover:hover) {
     .accordion__item-radio:hover ~ .label_check .image-box > img {
         max-width: 100%;
         transition: all 0.4s ease-in 0s;
     }
+
+    .accordion:hover .cross_icon {
+    opacity: 1;
 }
 
+.accordion__item-radio:hover ~ .label_check .accordion__item-box > .cross_icon {
+    opacity: 1;
+    transition: 0.5s;
+}
+}
+
+@media (min-width: 320px) {
+    .accordion__item-radio:checked ~ .label_check .image-box > img {
+        max-width: 80%;
+        transition: 0.5s;
+    }
+
+    .accordion__item-title {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 820px) {
+    .accordion__item-title {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1920px) {
+    .accordion__item-title {
+        font-size: 2em;
+    }
+}
