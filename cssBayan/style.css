@@ -6,8 +6,12 @@
 }
 
 .accordion {
-    max-width: 500px;
+    max-width: 40%;
     margin: 0 auto;
+}
+
+.accordion-title {
+    padding-top: 1em;
 }
 
 input[type="radio"] {
@@ -35,12 +39,16 @@ input[type="radio"] {
     color: black;
 }
 
+.accordion:hover .accordion__item-title {
+    color: black;
+}
+
 .accordion__item-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0.3em 0.3em 0 0.3em;
-    border-top: 1px solid #0e0e0e;
+    border-top: 0.1em solid #0e0e0e;
 }
 
 .cross_icon {
