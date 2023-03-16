@@ -72,6 +72,18 @@ input[type="radio"] {
     transform: rotate(45deg);
 }
 
+.accordion-item:active {
+    opacity: .75;
+}
+
+.label_check:active .accordion__item-box .accordion__item-title {
+    color: blue;
+}
+
+.accordion-item label:active .cross_icon {
+    filter: brightness(150%);
+}
+
 .image-box {
     display: flex;
     justify-content: center;
